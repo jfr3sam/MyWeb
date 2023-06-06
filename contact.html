@@ -154,6 +154,13 @@
               <form id="contact_form" action="https://formsubmit.co/e4460d20754c544bd4defaad19842cbc " method="POST">
                 <div
                   class="contact_form_inputs d-flex flex-md-row flex-column justify-content-between align-items-between">
+
+                  <!-- Honeypot -->
+                  <input type="text" name="_honey" style="display: none;">
+
+                  <!-- Disable Captcha -->
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_next" value="https://jfr3sam.github.io/myWebTest/success.html">
                   <input
                     type="text"
                     id="contact_form_name"
