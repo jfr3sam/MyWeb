@@ -1,4 +1,6 @@
 
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 /* success-message-sent */
 .container{
@@ -10,7 +12,7 @@
     justify-content: center;
 }
 .popup{
-    width: 400px;
+    width: 300px;
     background: #fff;
     border-radius: 6px;
     position: absolute;
@@ -18,10 +20,11 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     text-align: center;
+    justify-content: center;
     padding: 0 30px 30px;
 }
 .popup img{
-    width: 100px;
+    width: 80px;
     margin-top: -50%;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0 ,0.2);
@@ -29,7 +32,7 @@
 .popup h2{
     font-size: 38px;
     font-weight: 500;
-    margin: 30px 0 10px;
+    margin: 30px 10px;
 }
 .popup button{
     width: 100%;
@@ -44,4 +47,24 @@
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0 ,0.2);
     transition: transform 0.4s top 0.4s;
+}
+
+@media (max-width: 420px) {
+    .popup{
+        width: 200px;
+    }
+    .popup img{
+        width: 60px;
+    }
+        
+}
+
+@media (max-width: 290px) {
+    .popup{
+        width: 150px;
+    }
+    .popup img{
+        width: 60px;
+    }
+        
 }
