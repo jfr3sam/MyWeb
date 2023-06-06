@@ -1,15 +1,15 @@
 
 
-const submit = document.getElementById("popup")
+const submit = document.getElementById("submit")
+const ok = document.getElementById("ok")
+const popup = document.getElementById("popup")
 
 submit.addEventListener('click', () =>{
-    submit.classList.add("open-popup")
+    popup.classList.add("open-popup")
 
 });
 
-const ok = document.getElementById("ok")
-
-submit.addEventListener('click', () =>{
-    submit.classList.remove("open-popup")
+ok.addEventListener('click', () =>{
+    popup.classList.remove("open-popup")
 
 });
